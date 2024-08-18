@@ -1,0 +1,19 @@
+server_port: 8080
+postgres:
+  user: postgres
+  database: avito-bootcamp
+  ssl_mode: false
+  password: pass1234
+  host: localhost
+  port: 5432
+  database_timeout: 200
+  max_connections: 1000
+  max_idle_connections: 1000
+redis:
+  host: localhost:6380
+  password: pass1234
+  pool_size: 1000
+  timeout: 10
+  idle_timeout: 300000
+  session_timeout: 10
+  flat_cache_timeout: 10

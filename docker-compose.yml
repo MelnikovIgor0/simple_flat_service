@@ -1,0 +1,19 @@
+version: "1"
+services:
+  postgres:
+    image: postgres:14.12
+    container_name: postgres
+    restart: always
+    environment:
+      POSTGRES_DB: "avito-bootcamp"
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "pass1234"
+    ports:
+      - "5432:5432"
+  redis:
+    image: redis:latest
+    container_name: redis
+    restart: always
+    ports:
+      - '6380:6379'
+    command: redis-server --save 60 1 --loglevel warning --requirepass pass1234

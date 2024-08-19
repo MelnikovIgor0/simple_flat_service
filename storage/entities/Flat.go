@@ -1,9 +1,9 @@
 package entities
 
 type Flat struct {
-	Number int    `json:"number"`
+	Number int    `json:"id"`
 	Price  int    `json:"price"`
 	Rooms  int    `json:"rooms"`
-	HomeId int    `json:"homeId"`
+	HomeId int    `json:"house_id"`
 	Status string `json:"status"`
 }
